@@ -42,7 +42,7 @@ id.style.color = '#000000';
 					<li><a href="jsp/sys/role/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;角色管理</a></li>
 					
 					<li><a href="jsp/sys/permission/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;权限管理</a></li>
-						<li><a href="jsp/sys/permission/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;分类及分类号</a></li>
+						<li><a href="jsp/sys/typecode/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;分类及分类号</a></li>
 		     
 
 				
@@ -85,7 +85,7 @@ id.style.color = '#000000';
 				<li><a href="jsp/dev/store/myapplylist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;我的设备入库申请</a></li>
 				
 				<li><a href="jsp/dev/store/applylist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;设备入库审批</a></li>
-
+<li><a href="jsp/dev/store/checkedapplylist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;设备入库执行</a></li>
 
 
         </ul>
@@ -211,8 +211,7 @@ id.style.color = '#000000';
         </table>
         <ul class="MM">
         	 <li><a href="jsp/dev/check/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;固定资产盘点</a></li>
-        	  <li><a href="jsp/dev/check/profitlist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;资产盘盈</a></li>
-        	   <li><a href="jsp/dev/check/deficitlist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;资产盘亏</a></li>
+
         </ul>
       </div>
       

@@ -154,39 +154,66 @@ function toDelete(){
     <td valign="top" bgcolor="#F7F8F9">
     <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#F7F8F9" >
       <tr >
-        <td valign="top" class="STYLE10">
+        <td align="center" valign="top" class="STYLE10">
+        	<div style="border: 1px solid;width:99%;" >
+        	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+        		<tr><td align='right'>
 
- 					<span style="white-space:nowrap">&nbsp;&nbsp;使用部门:<select id="searchD1" name="searchD1" >
-						<option value="">——请选择——</option>
-						<option value="0" >网络工程系</option>
-						<option value="1" >软件工程系</option>
-					</select></span>
-
-					<span style="white-space:nowrap">&nbsp;&nbsp;使用人:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
-
-				<span style="white-space:nowrap">&nbsp;&nbsp;类型:<select id="searchD1" name="searchD1" >
-						<option value="">——请选择——</option>
-						<option value="0" >基础设施</option>
-						<option value="1" >实验设备</option>
-					</select></span>
-
-				<span style="white-space:nowrap">&nbsp;&nbsp;设备状态:<select id="searchD1" name="searchD1" >
-						<option value="">——请选择——</option>
-						<option value="0" >等待维修</option>
-						<option value="1" >已修好</option>
-						<option value="1" >未修好</option>
-					</select></span>
-
-		<span style="white-space:nowrap">&nbsp;&nbsp;维修费用范围起:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
-		<span style="white-space:nowrap">&nbsp;&nbsp;维修费用范围止:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-
-		<span style="white-space:nowrap">&nbsp;&nbsp;维修时间起:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
-
-		<span style="white-space:nowrap">&nbsp;&nbsp;维修时间止:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-
-		<span style="white-space:nowrap">&nbsp;&nbsp;<a href="javascript:void(0);" style="cursor:hand" onclick="findInfo()"><img src="../../../images/zoom.png" width="15" height="15" border="0"/> 查询</a></span>
-
-         
+ 							<span style="white-space:nowrap">&nbsp;&nbsp;使用部门:
+ 						</td>
+ 						<td align='left'>
+	 						<select id="searchD1" name="searchD1" >
+							<option value="">——请选择——</option>
+							<option value="0" >网络工程系</option>
+							<option value="1" >软件工程系</option>
+						</select></span>
+						</td>
+						<td align='right'>
+							<span style="white-space:nowrap">&nbsp;&nbsp;使用人:
+						</td>
+						<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
+						<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;类型:</td>
+						<td align='left'>
+							<select id="searchD1" name="searchD1" >
+								<option value="">——请选择——</option>
+								<option value="0" >基础设施</option>
+								<option value="1" >实验设备</option>
+							</select></span>
+						</td>
+						</tr>
+					<tr>
+						<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;设备状态:</td>
+						<td align='left'>
+						<select id="searchD1" name="searchD1" >
+							<option value="">——请选择——</option>
+							<option value="0" >等待维修</option>
+							<option value="1" >已修好</option>
+							<option value="1" >未修好</option>
+						</select></span>
+					</td>
+			
+					<td align='right'>
+						<span style="white-space:nowrap">&nbsp;&nbsp;维修费用范围起:
+					</td>
+					<td align='left'>
+						<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
+					</td>
+					
+					<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;维修费用范围止:</td>
+					<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
+					</tr>
+					<tr>
+					<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;维修时间起:</td>
+					<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
+					<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;维修时间止:</td>
+					<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
+				<td></td><td></td>
+				</tr>
+			<tr><td colspan="8" align='center'><span style="white-space:nowrap">&nbsp;&nbsp;<input type="submit" value="查询"></span>
+			</td>
+   		</tr>
+ 		</table> 
+ 		</div>   
 		<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">

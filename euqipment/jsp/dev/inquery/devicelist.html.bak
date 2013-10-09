@@ -155,22 +155,26 @@ function toDelete(){
     <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#F7F8F9" >
       <tr >
         <td valign="top" class="STYLE10">
-	
-		<span style="white-space:nowrap">&nbsp;&nbsp;使用部门:<select id="searchD1" name="searchD1" >
+	<table width="100%" border="0" cellpadding="0">
+		<tr>
+			<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;使用部门:</td>
+			<td align='left'><select id="searchD1" name="searchD1" >
 						<option value="">——请选择——</option>
 						<option value="0" >网络工程系</option>
 						<option value="1" >软件工程系</option>
-				</select></span>	
-		<span style="white-space:nowrap">&nbsp;&nbsp;使用人:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
-		
-		<span style="white-space:nowrap">&nbsp;&nbsp;设备状态:<select id="searchD1" name="searchD1" >
+				</select></span>	</td>
+			<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;使用人:</td>
+			<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		</td>
+			<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;设备状态:</td>
+			<td align='left'><select id="searchD1" name="searchD1" >
 						<option value="">——请选择——</option>
 						<option value="0" >正常</option>
 						<option value="1" >维修</option>
 						<option value="1" >报废</option>
-					</select></span>
-	
-				<span style="white-space:nowrap">&nbsp;&nbsp;使用方向:<select id="searchD1" name="searchD1" >
+					</select></span></td>
+				</tr><tr>
+			<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;使用方向:</td>
+			<td align='left'><select id="searchD1" name="searchD1" >
 						<option value="">——请选择——</option>
 						<option value="0" >教学</option>
 						<option value="1" >科研</option>
@@ -180,9 +184,10 @@ function toDelete(){
 						<option value="1" >开发</option>
 						<option value="1" >社会服务</option>
 						<option value="1" >其他</option>
-					</select></span>
-	
-				<span style="white-space:nowrap">&nbsp;&nbsp;经费科目:<select id="searchD1" name="searchD1" >
+					</select></span></td>
+
+			<td align='right'>	<span style="white-space:nowrap">&nbsp;&nbsp;经费科目:</td>
+			<td align='left'>	<select id="searchD1" name="searchD1" >
 						<option value="">——请选择——</option>
 						<option value="0" >教学</option>
 						<option value="1" >科研</option>
@@ -191,12 +196,37 @@ function toDelete(){
 						<option value="1" >世行贷款</option>
 						<option value="1" >捐赠</option>
 						<option value="1" >其他</option>
-					</select></span>
-		<span style="white-space:nowrap">&nbsp;&nbsp;启用时间始:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
-		<span style="white-space:nowrap">&nbsp;&nbsp;启用时间止:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-
+					</select></span></td>
+			<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;启用时间起:</td>
+				
+			<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		</td>
+						</tr>
+		<tr>
+			<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;启用时间止:</td>
+			<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
+			<td align='right'></td>
+			<td align='left'></td>
+			<td align='right'></td>
+			<td align='left'></td>
+		</tr>
 		
-		<span style="white-space:nowrap">&nbsp;&nbsp;<a href="javascript:void(0);" style="cursor:hand" onclick="findInfo()"><img src="../../../images/zoom.png" width="15" height="15" border="0"/> 查询</a></span>
+		<tr>
+			<td colspan="8" align="center">	<span style="white-space:nowrap">&nbsp;&nbsp;<input type="submit" value="查询" ></span></td>
+			
+			</tr>
+	</table>
+		
+		
+		
+		
+	
+				
+	
+		
+		
+		
+		
+	
     	
          
 		<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">

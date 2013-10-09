@@ -143,7 +143,7 @@ function toDelete(){
     <td width="17" valign="top" background="../../../images/mail_leftbg.gif"><img src="../../../images/left-top-right.gif" width="17" height="29" /></td>
     <td valign="top" background="../../../images/content-bg.gif"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
       <tr>
-        <td height="31"><div class="titlebt">设备信息查询 > 设备维修信息查询</div></td>
+        <td height="31"><div class="titlebt">执行设备入库 > 设置报废时间</div></td>
       </tr>
     </table></td>
     <td width="16" valign="top" background="../../../images/mail_rightbg.gif"><img src="../../../images/nav-right-bg.gif" width="16" height="29" /></td>
@@ -154,66 +154,13 @@ function toDelete(){
     <td valign="top" bgcolor="#F7F8F9">
     <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#F7F8F9" >
       <tr >
-        <td align="center" valign="top" class="STYLE10">
-        	<div style="border: 1px solid;width:100%;" >
-        	<table width="100%" border="0" cellpadding="0" cellspacing="0">
-        		<tr><td align='right'>
-
- 							<span style="white-space:nowrap">&nbsp;&nbsp;使用部门:
- 						</td>
- 						<td align='left'>
-	 						<select id="searchD1" name="searchD1" >
-							<option value="">——请选择——</option>
-							<option value="0" >网络工程系</option>
-							<option value="1" >软件工程系</option>
-						</select></span>
-						</td>
-						<td align='right'>
-							<span style="white-space:nowrap">&nbsp;&nbsp;使用人:
-						</td>
-						<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
-						<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;类型:</td>
-						<td align='left'>
-							<select id="searchD1" name="searchD1" >
-								<option value="">——请选择——</option>
-								<option value="0" >基础设施</option>
-								<option value="1" >实验设备</option>
-							</select></span>
-						</td>
-						</tr>
-					<tr>
-						<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;设备状态:</td>
-						<td align='left'>
-						<select id="searchD1" name="searchD1" >
-							<option value="">——请选择——</option>
-							<option value="0" >等待维修</option>
-							<option value="1" >已修好</option>
-							<option value="1" >未修好</option>
-						</select></span>
-					</td>
-			
-					<td align='right'>
-						<span style="white-space:nowrap">&nbsp;&nbsp;维修费用范围起:
-					</td>
-					<td align='left'>
-						<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
-					</td>
-					
-					<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;维修费用范围止:</td>
-					<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
-					</tr>
-					<tr>
-					<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;维修时间起:</td>
-					<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
-					<td align='right'><span style="white-space:nowrap">&nbsp;&nbsp;维修时间止:</td>
-					<td align='left'><input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span></td>
-				<td></td><td></td>
-				</tr>
-			<tr><td colspan="8" align='center'><span style="white-space:nowrap">&nbsp;&nbsp;<input type="submit" value="查询"></span>
-			</td>
-   		</tr>
- 		</table> 
- 		</div>   
+        <td valign="top" class="STYLE10">
+	
+		<span style="white-space:nowrap">&nbsp;&nbsp;设备编号:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
+		<span style="white-space:nowrap">&nbsp;&nbsp;设备名称:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
+		<span style="white-space:nowrap">&nbsp;&nbsp;<a href="javascript:void(0);" style="cursor:hand" onclick="findInfo()"><img src="../../../images/zoom.png" width="15" height="15" border="0"/> 查询</a></span>
+    	
+         
 		<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -223,13 +170,16 @@ function toDelete(){
             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="6%" height="19" valign="bottom"><div align="center"><img src="../../../images/tb.gif" width="14" height="14" /></div></td>
-                <td width="94%" valign="bottom"><span class="STYLE1" style="white-space:nowrap">设备信息列表</span></td>
+                <td width="94%" valign="bottom"><span class="STYLE1" style="white-space:nowrap">设置报废时间</span></td>
               </tr>
             </table></td>
             <td>
 	            <div align="right">
 	            	<span class="STYLE1" style="white-space:nowrap">
-                        <a href="#" onclick="toHouseLay();"><img src="../../../images/del_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">导出</span></a>&nbsp;&nbsp;
+						<a href="addstore.html" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">设置报废时间</span></a>&nbsp; 
+      				
+      									
+                       
                         <a href="#" onclick="toRoom();"><img src="../../../images/del_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">打印</span></a>&nbsp;&nbsp;
 	                </span>
 	           </div>
@@ -250,65 +200,63 @@ function toDelete(){
 	  	</div>
 	  	</td>
 	  	<td width="40"  bgcolor="d3eaef" ><div align="center"><span class="STYLE10">序号</span></div></td>
-	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">维护编号</span></div></td>
+	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">设备编号</span></div></td>
 	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">设备名称</span></div></td>
-	  	
 	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">设备型号</span></div></td>
-	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">使用部门</span></div></td>
-		  <td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">类型</span></div></td>
-		  			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">所在实验室</span></div></td>
-		  <td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">使用人</span></div></td>
-			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">设备状态</span></div></td>
-			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">维修时间</span></div></td>
-			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">维修费用</span></div></td>
-						<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">详细信息</span></div></td>
-
-	
+		  <td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">设备单价</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">数量</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">金额</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">经费来源</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">厂家</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">时间</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">申请状态</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">详细</span></div></td>
+		
 		</tr>
 		<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
 		<td>1 </td>
-		<td title="">00001</td>
+		<td title="">SB000001</td>
 		<td title="">整流器</td>
     <td title="">SB-100</td>
-		<td title="">网络工程系</td>
-    <td title="">电子</td>
-    <td title="">网络工程实验室一</td>
-    <td title="">李白</td>
-    <td title="">维修成功</td>
-    <td title="">2012-12-01</td>
-    <td title="">600</td>
-    <td title=""><a href="devinfo.html">详细信息</a></td>
+		<td title="">10</td>
+    <td title="">12</td>
+    <td title="">120</td>
+    <td title="">科研</td>
+    <td title="">中国电子</td>
+    <td title="">2012-11-02</td>
+    <td title="">未通过</td>
+    <td title=""><a href="apply.html">详细信息</a></td>
 		</tr>		
 		<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
 		<td>2 </td>
-		<td title="">00002</td>
-			<td title="">扰流器</td>
-    <td title="">SB-100</td>
-		<td title="">软件工程</td>
-    <td title="">电子</td>
-    <td title="">软件工程实验室一</td>
-    <td title="">杜甫</td>
-    <td title="">待维修</td>
-    <td title="">2012-12-21</td>
-    <td title="">300</td>
-    <td title=""><a href="devinfo.html">详细信息</a></td>
+		<td title="">SB000002</td>
+		<td title="">滤波器</td>
+    <td title="">VF-10</td>
+		<td title="">10</td>
+    <td title="">12</td>
+    <td title="">120</td>
+    <td title="">科研</td>
+    <td title="">中国电子</td>
+    <td title="">2012-11-02</td>
+    <td title="">未提交</td>
+    <td title=""><a href="apply.html">详细信息</a></td>
 		</tr>	
 			<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
 		<td>3 </td>
-				<td title="">00003</td>
-				<td title="">分流器</td>
+	<td title="">SB000003</td>
+		<td title="">整流器</td>
     <td title="">SB-100</td>
-		<td title="">计算机</td>
-    <td title="">电子</td>
-    <td title="">计算机实验室一</td>
-    <td title="">离赫</td>
-    <td title="">维修失败</td>
-    <td title="">2012-11-21</td>
-    <td title="">400</td>
-    <td title=""><a href="devinfo.html">详细信息</a></td>
+		<td title="">10</td>
+    <td title="">12</td>
+    <td title="">120</td>
+    <td title="">科研</td>
+    <td title="">中国电子</td>
+    <td title="">2012-11-02</td>
+    <td title="">通过</td>
+    <td title=""><a href="apply.html">详细信息</a></td>
 		</tr>	
         <tr height="16px"></tr>	
     </table>
