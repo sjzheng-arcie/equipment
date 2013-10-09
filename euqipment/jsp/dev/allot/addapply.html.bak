@@ -18,7 +18,7 @@ document.form1.submit();
     <td valign="top" background="../../../images/content-bg.gif">
         <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
         <tr>
-            <td height="31"><div class="titlebt">设备转移管理 > 转移申请</div></td>
+            <td height="31"><div class="titlebt">设备调拨管理 > 调拨申请</div></td>
         </tr>
         </table>
     </td>
@@ -146,7 +146,6 @@ document.form1.submit();
 							<input type="button" name="Submit" value="保存" class="button" onclick="save();"/>
 							<input type="reset" name="Submit3" value="重置" class="button" onclick="reset();"/>
 								<input type="button" name="Submit" value="提交" class="button" onclick="save();"/>
-
 
 							<input type="button" name="Submit2" value="返回" class="button" onclick="window.history.go(-1);"/>
 						</td>
