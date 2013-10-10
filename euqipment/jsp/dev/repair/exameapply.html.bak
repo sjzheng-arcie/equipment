@@ -3,7 +3,7 @@
 <script src="../../../js/valid.js" type=text/javascript></script> 
 <script> 
 function save(){
-document.form1.action="upkeeplist.html";
+document.form1.action="myapplylist.html";
 document.form1.submit();
 }
 

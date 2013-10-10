@@ -143,7 +143,7 @@ function toDelete(){
     <td width="17" valign="top" background="../../../images/mail_leftbg.gif"><img src="../../../images/left-top-right.gif" width="17" height="29" /></td>
     <td valign="top" background="../../../images/content-bg.gif"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
       <tr>
-        <td height="31"><div class="titlebt">设备维修管理 > 设备维修费审核</div></td>
+        <td height="31"><div class="titlebt">设备维修管理 > 设备维修费申请</div></td>
       </tr>
     </table></td>
     <td width="16" valign="top" background="../../../images/mail_rightbg.gif"><img src="../../../images/nav-right-bg.gif" width="16" height="29" /></td>
@@ -157,8 +157,7 @@ function toDelete(){
         <td valign="top" class="STYLE10">
 	
 		<span style="white-space:nowrap">&nbsp;&nbsp;申请编号:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-		<span style="white-space:nowrap">&nbsp;&nbsp;维修费用起:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-		<span style="white-space:nowrap">&nbsp;&nbsp;维修费用止:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>		
+	
 		<span style="white-space:nowrap">&nbsp;&nbsp;<a href="javascript:void(0);" style="cursor:hand" onclick="findInfo()"><img src="../../../images/zoom.png" width="15" height="15" border="0"/> 查询</a></span>
     	
          
@@ -177,11 +176,12 @@ function toDelete(){
             <td>
 	            <div align="right">
 	            	<span class="STYLE1" style="white-space:nowrap">
-	            			<a href="exameupkeepapply.html" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">审批申请</span></a>&nbsp; 
-									
-
-      					  <a href="" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">退回申请</span></a>&nbsp; 
+	            		
+									<a href="addupkeepapply.html" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">添加申请</span></a>&nbsp; 
+      						<a href="updateapply.html" onclick="toUpdate();"><img src="../../../images/edit_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">修改申请</span></a>&nbsp;
+      					  <a href="" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">删除申请</span></a>&nbsp; 
       						<a href="applydetail.html" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">查看详细</span></a>&nbsp; 
+             
                   <a href="#" onclick="toRoom();"><img src="../../../images/del_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">打印</span></a>&nbsp;&nbsp;
 	              </span>
 	           </div>
@@ -194,7 +194,7 @@ function toDelete(){
   <tr>
     <td>
 	<div id="divwidth"  style="overflow:auto;overflow-y:hidden;"> 
-   	<table width="100%" class="table" id="table1" border="0" cellpadding="0" cellspacing="1" bgcolor="#a8c7ce">
+   		<table width="100%" class="table" id="table1" border="0" cellpadding="0" cellspacing="1" bgcolor="#a8c7ce">
 		<tr>
 	  	<td width="40" height="20" bgcolor="d3eaef" class="STYLE10">
 	  	<div align="center">
@@ -207,11 +207,14 @@ function toDelete(){
 	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">设备编号</span></div></td>
 	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">设备名称</span></div></td>
 	  	<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">持有部门</span></div></td>
+		  <td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">维修费用</span></div></td>
+		  <td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">经费科目</span></div></td>
 			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">申请时间</span></div></td>
-			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">经费来源</span></div></td>
-			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">维修费用</span></div></td>
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">损坏情况</span></div></td>
 			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">维修方式</span></div></td>
-			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">审核结果</span></div></td>
+
+
+			<td width="100" bgcolor="d3eaef" ><div align="center"><span class="STYLE10">审批结果</span></div></td>
 
 		</tr>
 		<tr bgcolor="#ffffff" align="center" class="STYLE19">
@@ -223,13 +226,13 @@ function toDelete(){
     <td title="">SB1001</td>
 		<td title="">整流器</td>
     <td title="">网络工程办公室</td>
-
+    <td title="">网络实验室一</td>
+    		<td title="">100</td>
     <td title="">2012-10-12</td>
+    <td title="">极其严重</td>
+    <td title="">自行维修</td>
 
-    <td title="">科研</td>
-		<td title="">100</td>
-		<td title="">保修期外维修</td>
-		<td title="">未通过</td>
+		<td title="">同意</td>
 		</tr>		
 		<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
@@ -240,13 +243,13 @@ function toDelete(){
     <td title="">SB1002</td>
 		<td title="">单频微波发生器</td>
     <td title="">网络工程办公室</td>
-
+    <td title="">网络实验室一</td>
+    		<td title="">100</td>
     <td title="">2012-10-12</td>
+    <td title="">极其严重</td>
+    <td title="">自行维修</td>
 
-    <td title="">科研</td>
-		<td title="">100</td>
-		<td title="">保修期内维修</td>
-		<td title="">审核通过</td>
+		<td title="">同意</td>
 
 		</tr>	
 			<tr bgcolor="#ffffff" align="center" class="STYLE19">
@@ -259,13 +262,13 @@ function toDelete(){
 		<td title="">PTC-RC电子起谱器</td>
 
     <td title="">计算机办公室</td>
-
+    <td title="">计算机实验室一</td>
+   	<td title="">100</td>
     <td title="">2012-10-12</td>
-
-    <td title="">教学</td>
-		<td title="">100</td>
-		<td title="">保修期外维修</td>
-		<td title="">未通过</td>
+    
+    <td title="">极其严重</td>
+    <td title="">自行维修</td>
+		<td title="">同意</td>
 		</tr>	
         <tr height="16px"></tr>	
     </table>
