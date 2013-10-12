@@ -228,19 +228,19 @@ a:visited {
 }
 
 
-.top_right_top a:link {
+.left_top_link a:link {
 	font-size: 12px;
 	line-height: 20px;
 	color: #ffffff;
 	text-decoration: none;
 }
-.top_right_top a:hover {
+.left_top_link a:hover {
 	font-size: 12px;
 	line-height: 20px;
 	color: #ffffff;
 	text-decoration: none;
 }
-.top_right_top a:visited {
+.left_top_link a:visited {
 	font-size: 12px;
 	line-height: 20px;
 	color: #ffffff;
